@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import '../models/evento.dart';
 import '../theme/app_theme.dart';
@@ -266,7 +268,6 @@ class _TelaDetalhesState extends State<TelaDetalhes> {
           style: const TextStyle(fontSize: 13, color: AppColors.textoSuave),
         ),
         const SizedBox(height: 16),
-
         Form(
           key: _formKey,
           child: Column(
@@ -289,7 +290,6 @@ class _TelaDetalhesState extends State<TelaDetalhes> {
                 },
               ),
               const SizedBox(height: 14),
-
               TextFormField(
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
@@ -313,7 +313,6 @@ class _TelaDetalhesState extends State<TelaDetalhes> {
                 },
               ),
               const SizedBox(height: 20),
-
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
