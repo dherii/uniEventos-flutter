@@ -1,0 +1,45 @@
+name: uni_eventos
+description: App para visualização e inscrição em eventos acadêmicos universitários.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.6
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/UnicatolicaLogo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#fe6a3f"   # laranja institucional
+  adaptive_icon_foreground: "assets/images/UnicatolicaLogo.png"
+
+flutter_native_splash:
+  color: "#fe6a3f"                       # fundo laranja unicatolica
+  image: assets/images/UnicatolicaLogo_splash.png
+  color_dark: "#013857"                  # modo escuro: azul gradiente unicatolica
+  image_dark: assets/images/UnicatolicaLogoWhite_azul_splash.png
+  android_12:
+    image: assets/images/UnicatolicaLogo_splash.png
+    color: "#fe6a3f"
+    image_dark: assets/images/UnicatolicaLogoWhite_azul_splash.png
+    color_dark: "#013857"
+  web: false
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
